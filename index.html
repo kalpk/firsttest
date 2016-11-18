@@ -1,0 +1,86 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Progress Bar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		Progress Bar 0 : <progress id="progressBar" value="79" min="0" max="100" style="width:300px;" ></progress><br>
+		Progress Bar 1 : <progress id="progressBar1" value="35" min="0" max="100" style="width:300px;" ></progress><br>
+		Progress Bar 2 : <progress id="progressBar2" value="71" min="0" max="100" style="width:300px;" ></progress><br>
+		Progress Bar 3 : <progress id="progressBar3" value="33" min="0" max="100" style="width:300px;" ></progress>
+		<form name="progressform">
+			<p>
+			<select name="propertydropdown" id="propertydropdown">
+			<option value="1" >Progress Bar</option>
+			<option value="2" >Progress Bar1</option>
+			<option value="3" >Progress Bar2</option>
+			<option value="4" >Progress Bar3</option>
+			</select>
+			<input type="button" value="10" onclick="progressBarSim()"/>
+			<input type="button" value="29" onclick="progressBarSim1()"/>
+			<input type="button" value="-12" onclick="progressBarSim2()"/>
+			<input type="button" value="-22" onclick="progressBarSim3()"/>
+			</p>
+		</form>
+		<script type='text/javascript'>
+			function progressBarSim(valueToSet) {
+				if (propertydropdown.value == "1"){
+				var v1=document.getElementById('progressBar').value;
+				document.getElementById("progressBar").value= v1 + 10;}
+				else if (propertydropdown.value == "2"){
+				var v2=document.getElementById('progressBar1').value;
+				document.getElementById("progressBar1").value= v2 + 10;}
+				else if (propertydropdown.value == "3"){
+				var v3=document.getElementById('progressBar2').value;
+				document.getElementById("progressBar2").value= v3 + 10;}
+				else if (propertydropdown.value == "4"){
+				var v4=document.getElementById('progressBar3').value;
+				document.getElementById("progressBar3").value= v4 + 10;}
+			}
+			function progressBarSim1(valueToSet) {
+				if (propertydropdown.value == "1"){
+				var v1=document.getElementById('progressBar').value;
+				document.getElementById("progressBar").value= v1 + 29;}
+				else if (propertydropdown.value == "2"){
+				var v2=document.getElementById('progressBar1').value;
+				document.getElementById("progressBar1").value= v2 + 29;}	
+				else if (propertydropdown.value == "3"){
+				var v3=document.getElementById('progressBar2').value;
+				document.getElementById("progressBar2").value= v3 + 29;}
+				else if (propertydropdown.value == "4"){
+				var v4=document.getElementById('progressBar3').value;
+				document.getElementById("progressBar3").value= v4 + 29;}
+			}
+			function progressBarSim2(valueToSet) {
+				if (propertydropdown.value == "1"){
+				var v1=document.getElementById('progressBar').value;
+				document.getElementById("progressBar").value= v1 - 12;}
+				else if (propertydropdown.value == "2"){
+				var v2=document.getElementById('progressBar1').value;
+				document.getElementById("progressBar1").value= v2 - 12;}	
+				else if (propertydropdown.value == "3"){
+				var v3=document.getElementById('progressBar2').value;
+				document.getElementById("progressBar2").value= v3 - 12;}
+				else if (propertydropdown.value == "4"){
+				var v4=document.getElementById('progressBar3').value;
+				document.getElementById("progressBar3").value= v4 - 12;}
+			}
+			function progressBarSim3(valueToSet) {
+				if (propertydropdown.value == "1"){
+				var v1=document.getElementById('progressBar').value;
+				document.getElementById("progressBar").value= v1 - 22;}
+				else if (propertydropdown.value == "2"){
+				var v2=document.getElementById('progressBar1').value;
+				document.getElementById("progressBar1").value= v2 - 22;}	
+				else if (propertydropdown.value == "3"){
+				var v3=document.getElementById('progressBar2').value;
+				document.getElementById("progressBar2").value= v3 - 22;}
+				else if (propertydropdown.value == "4"){
+				var v4=document.getElementById('progressBar3').value;
+				document.getElementById("progressBar3").value= v4 - 22;}
+			}
+		</script>
+		
+	</body>
+</html>
